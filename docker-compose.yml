@@ -1,0 +1,9 @@
+services:
+  todo-app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - todo-data:/data
+volumes:
+  todo-data:
